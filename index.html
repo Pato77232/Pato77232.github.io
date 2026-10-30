@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edwin Caraguay · Estudiante de Ingeniería de Software</title>
+  <meta name="description" content="Portafolio de Edwin Caraguay, estudiante de Ingeniería de Software en la Universidad Técnica de Ambato, Ecuador.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Edwin Caraguay</h1>
+      <p class="lead">Estudio Ingeniería de Software en la Universidad Técnica de Ambato, Ecuador. Me interesa la inteligencia artificial y la astrofísica, y quiero seguir con estudios de posgrado en esa dirección.</p>
+      <p class="links">
+        <a href="#proyectos">Ver proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </p>
+    </div>
+    <svg class="orbit" viewBox="0 0 200 200" role="img" aria-label="Dibujo de un planeta orbitando una estrella">
+      <circle cx="100" cy="100" r="78" class="ring"/>
+      <circle cx="100" cy="100" r="46" class="ring"/>
+      <circle cx="100" cy="100" r="9" class="star"/>
+      <g class="spin-outer"><circle cx="178" cy="100" r="6" class="planet"/></g>
+      <g class="spin-inner"><circle cx="146" cy="100" r="4" class="planet small"/></g>
+    </svg>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Estoy en tercer año de la carrera. Trabajo sobre todo con Java, C++ y tecnologías web, y me gusta entender cómo funciona el software por dentro: estructuras de datos, bases de datos y el proceso de construir un sistema en equipo con Git.</p>
+      <p>Aprendo haciendo proyectos. Estoy abierto a colaborar y a aprender de otros desarrolladores.</p>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <ul class="projects">
+        <li>
+          <h3><a href="https://github.com/TU-USUARIO/smartcampus-uta">SmartCampus UTA</a></h3>
+          <p>Sistema de gestión de campus hecho con JHipster para la materia de Estructuras de Datos.</p>
+          <p class="stack">JHipster, Java, Spring Boot</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/TU-USUARIO/generador-de-codigo">Generador de código dirigido por modelos</a></h3>
+          <p>Generador que parte de un modelo y produce una aplicación Laravel. Usa herramientas de modelado para definir el lenguaje y las plantillas de generación.</p>
+          <p class="stack">EMF, Xtext, Xtend, Laravel</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/TU-USUARIO/pasajes-interprovinciales">Venta de pasajes interprovinciales</a></h3>
+          <p>Aplicación web para vender pasajes entre provincias de Ecuador. Trabajada en equipo con Git, Jira y Gitflow, con README y guía de contribución.</p>
+          <p class="stack">Aplicación web, Git, Jira</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/TU-USUARIO/backyardigans">Sitio web de Los Backyardigans</a></h3>
+          <p>Sitio de presentación de mi grupo de trabajo, con una página principal y una subpágina por integrante.</p>
+          <p class="stack">HTML, CSS, YAML</p>
+        </li>
+      </ul>
+      <p class="more"><a href="https://github.com/TU-USUARIO?tab=repositories">Ver todos los repositorios en GitHub</a></p>
+    </section>
+
+    <section id="tecnologias">
+      <h2>Tecnologías</h2>
+      <dl class="stack-list">
+        <dt>Lenguajes</dt><dd>Java, C++, Python</dd>
+        <dt>Web</dt><dd>HTML, CSS, JavaScript</dd>
+        <dt>Bases de datos</dt><dd>SQL, Oracle (procedures y triggers)</dd>
+        <dt>Herramientas</dt><dd>Git, GitHub, Visual Studio Code</dd>
+        <dt>Conceptos</dt><dd>Programación orientada a objetos, estructuras de datos y algoritmos</dd>
+      </dl>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>La forma más rápida de escribirme es por LinkedIn.</p>
+      <ul class="contact">
+        <li><a href="https://www.linkedin.com/in/edwin-patricio-caraguay-pucha-573b6b3b4/">LinkedIn</a></li>
+        <li><a href="https://github.com/TU-USUARIO">GitHub</a></li>
+        <li><a href="https://www.instagram.com/pato772332/">Instagram</a></li>
+        <li><a href="mailto:TU-CORREO@ejemplo.com">TU-CORREO@ejemplo.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="anio">2026</span> Edwin Caraguay</p>
+  </footer>
+
+  <script>
+    document.getElementById('anio').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

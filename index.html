@@ -11,22 +11,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
+  <a class="skip-link" href="#sobre-mi">Saltar al contenido</a>
+  <nav class="navigation" aria-label="Navegación principal">
+    <a class="brand" href="#inicio">EC<span> / </span>PATO77232</a>
+    <div><a href="#proyectos">Proyectos</a><a href="#universo">Mi universo</a><a href="#contacto">Contacto</a></div>
+  </nav>
+  <header class="hero" id="inicio">
     <div class="hero-text">
-      <h1>Edwin Caraguay</h1>
+      <p class="eyebrow">SOFTWARE · ESPACIO · CREATIVIDAD</p>
+      <h1>Edwin<br><span>Caraguay.</span></h1>
       <p class="lead">Estudio Ingeniería de Software en la Universidad Técnica de Ambato, Ecuador. Me interesa la inteligencia artificial y la astrofísica, y quiero seguir con estudios de posgrado en esa dirección.</p>
       <p class="links">
-        <a href="#proyectos">Ver proyectos</a>
+        <a class="button" href="#proyectos">Explorar proyectos <span aria-hidden="true">↗</span></a>
         <a href="#contacto">Contacto</a>
       </p>
     </div>
-    <svg class="orbit" viewBox="0 0 200 200" role="img" aria-label="Dibujo de un planeta orbitando una estrella">
+    <div class="orbital-scene" aria-hidden="true"><span class="scene-label">EXPLORANDO NUEVAS ÓRBITAS</span><svg class="orbit" viewBox="0 0 200 200" role="img" aria-label="Dibujo de un planeta orbitando una estrella">
       <circle cx="100" cy="100" r="78" class="ring"/>
       <circle cx="100" cy="100" r="46" class="ring"/>
       <circle cx="100" cy="100" r="9" class="star"/>
       <g class="spin-outer"><circle cx="178" cy="100" r="6" class="planet"/></g>
       <g class="spin-inner"><circle cx="146" cy="100" r="4" class="planet small"/></g>
-    </svg>
+    </svg><span class="scene-coordinate">EC / 01 &nbsp; · &nbsp; ECUADOR</span></div>
   </header>
 
   <main>
@@ -59,6 +65,17 @@
       </dl>
     </section>
 
+    <section id="universo">
+      <p class="eyebrow">FUERA DEL CÓDIGO</p>
+      <div class="section-heading"><h2>Mi universo</h2><span>Otras formas de explorar.</span></div>
+      <p class="section-intro">Entre mundos de ciencia ficción, partidas, cuerdas y buenas historias. Estos son algunos de los gustos que me acompañan.</p>
+      <div class="hobby-grid">
+        <article class="hobby gaming"><span class="hobby-icon" aria-hidden="true">✧</span><div><h3>Videojuegos</h3><p>Explorar otros mundos, disfrutar de una buena partida y descubrir nuevas historias.</p><p class="small-label">MIS FAVORITOS</p><ul class="favorite-games"><li>Halo</li><li>Titanfall</li><li>League of Legends</li><li>No Man’s Sky</li></ul></div></article>
+        <article class="hobby music"><span class="hobby-icon" aria-hidden="true">♫</span><div><h3>Guitarra & música</h3><p>Mi otra forma de desconectar y expresarme.</p><a class="spotify-link" href="https://open.spotify.com/user/314q5s5pand6oy3ckpycsc7tqlyq" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="currentColor"/><path d="M5 9c5-2 10-1 14 1M6 12c4-1.5 8-1 12 1M7 15c3-1 6-.5 10 1" fill="none" stroke="#07110c" stroke-width="1.6" stroke-linecap="round"/></svg>Mi perfil de Spotify <span aria-hidden="true">↗</span><span class="sr-only"> (abre en una nueva pestaña)</span></a></div></article>
+        <article class="hobby"><span class="hobby-icon" aria-hidden="true">▷</span><div><h3>Películas & series</h3><p>Historias para cambiar de perspectiva y perderme en otros mundos.</p><p class="small-label">MIS FAVORITAS</p><ul class="favorite-games"><li>Interstellar</li><li>Arcane</li><li>The Mentalist</li></ul></div></article>
+      </div>
+    </section>
+
     <section id="contacto">
       <h2>Contacto</h2>
       <p>La forma más rápida de escribirme es por LinkedIn.</p>
@@ -66,6 +83,7 @@
         <li><a href="https://www.linkedin.com/in/edwin-patricio-caraguay-pucha-573b6b3b4/">LinkedIn</a></li>
         <li><a href="https://github.com/Pato77232">GitHub</a></li>
         <li><a href="https://www.instagram.com/pato772332/">Instagram</a></li>
+      </ul>
     </section>
   </main>
 
